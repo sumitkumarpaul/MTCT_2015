@@ -15,7 +15,6 @@
 #include <QTextStream>
 #include <QTransform>
 
-/* Constructor */
 Widget::Widget(QWidget* parent): QWidget(parent), ui(new Ui::Widget), last(0){
     ui->setupUi(this);
 
@@ -34,7 +33,6 @@ Widget::Widget(QWidget* parent): QWidget(parent), ui(new Ui::Widget), last(0){
     colormap.insert(std::make_pair(marker_delete, Qt::blue));
 }
 
-/* Desctructor */
 Widget::~Widget(){
     delete ui;
     delete scene;
